@@ -6,6 +6,7 @@
 #include "motor.h"
 
 extern unsigned char sendCtrlFlag;
+extern unsigned char receCtrlFlag;
 /**************************************************************************
 函数功能：向PC发送调试数据，配合串口助手使用
 入口参数：无
@@ -24,3 +25,24 @@ void pcShow(void)
 
 }
 
+
+void status_show(void)
+{
+	switch(receCtrlFlag)
+	{
+		case 1:
+			printf("打开建图功能\r\n");break;
+		case 2:
+			printf("建图完成\r\n");break;
+		case 3:
+			printf("打开导航功能\r\n");break;
+		case 4:
+			printf("自动巡航\r\n");break;
+		case 5:
+			printf("到达A点\r\n");break;
+		case 6:
+			printf("到达B点\r\n");break;
+		default:
+			break;
+	}
+}

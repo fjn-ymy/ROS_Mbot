@@ -76,6 +76,7 @@ int main(void)
 			usartSendData(USART1,(short)leftSpeedNow,(short)rightSpeedNow,(short)yaw,(short)Voltage,(float)q1,(float)q2,(float)q3,(float)q0,sendCtrlFlag);  //1ms
 			//蓝牙调试时用，不调试注释
 			//pcShow();                                                           //2.2ms单个float数据
+		  status_show();
 			sendCount++;
 		}
 		else
