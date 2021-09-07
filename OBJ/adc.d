@@ -2,7 +2,7 @@
 ..\obj\adc.o: ..\Mbot_HARDWARE\ADC\adc.h
 ..\obj\adc.o: ..\USER\stm32f10x.h
 ..\obj\adc.o: ..\Mbot_COER\core_cm3.h
-..\obj\adc.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\adc.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\adc.o: ..\USER\system_stm32f10x.h
 ..\obj\adc.o: ..\USER\stm32f10x_conf.h
 ..\obj\adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

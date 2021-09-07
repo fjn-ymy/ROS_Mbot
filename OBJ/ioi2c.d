@@ -2,7 +2,7 @@
 ..\obj\ioi2c.o: ..\Mbot_HARDWARE\IIC\ioi2c.h
 ..\obj\ioi2c.o: ..\USER\stm32f10x.h
 ..\obj\ioi2c.o: ..\Mbot_COER\core_cm3.h
-..\obj\ioi2c.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ioi2c.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\ioi2c.o: ..\USER\system_stm32f10x.h
 ..\obj\ioi2c.o: ..\USER\stm32f10x_conf.h
 ..\obj\ioi2c.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

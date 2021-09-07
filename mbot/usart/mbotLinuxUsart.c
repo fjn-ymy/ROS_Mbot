@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-unsigned char sendCtrlFlag =0;
+unsigned char sendCtrlFlag =1;
 unsigned char receCtrlFlag =0;
 
 /*--------------------------------发送协议-----------------------------------
@@ -33,7 +33,13 @@ union sendData
 {
 	short d;
 	unsigned char data[2];
-}leftVelNow,rightVelNow,angleNow;
+}leftVelNow,rightVelNow,angleNow,battery_volt;
+
+union sendData1
+{
+	float d;
+	unsigned char data1[4];
+}q0_,q1_,q2_,q3_;
 
 //左右轮速控制速度共用体
 union receiveData
@@ -165,30 +171,44 @@ int usartReceiveOneData(USART_TypeDef* USARTx,int *p_leftSpeedSet,int *p_rightSp
 入口参数：实时左轮轮速、实时右轮轮速、实时角度、控制信号（如果没有角度也可以不发）
 返回  值：无
 **************************************************************************/
-void usartSendData(USART_TypeDef* USARTx,short leftVel, short rightVel,short angle,unsigned char ctrlFlag)
+void usartSendData(USART_TypeDef* USARTx,short leftVel, short rightVel,short angle,short vol,float qx,float qy,float qz,float qw,unsigned char ctrlFlag)
 {
-	// 协议数据缓存数组
-	unsigned char buf[13] = {0};
+		unsigned char buf[31] = {0};
 	int i, length = 0;
 
 	// 计算左右轮期望速度
 	leftVelNow.d  = leftVel;
 	rightVelNow.d = rightVel;
 	angleNow.d    = angle;
+	battery_volt.d    = vol;
+	q0_.d         = qx;
+	q1_.d         = qy;
+	q2_.d         = qz;
+	q3_.d         = qw;
 	
 	// 设置消息头
 	for(i = 0; i < 2; i++)
 		buf[i] = header[i];                      // buf[0] buf[1] 
 	
 	// 设置机器人左右轮速度、角度
-	length = 7;
+	length = 25;
 	buf[2] = length;                             // buf[2]
 	for(i = 0; i < 2; i++)
 	{
 		buf[i + 3] = leftVelNow.data[i];         // buf[3] buf[4]
 		buf[i + 5] = rightVelNow.data[i];        // buf[5] buf[6]
 		buf[i + 7] = angleNow.data[i];           // buf[7] buf[8]
+		buf[i + 9] = battery_volt.data[i];           // buf[9] buf[10]
 	}
+	
+	for(i = 0; i < 4; i++)
+	{
+		buf[i + 11] = q0_.data1[i];             // buf[11]-buf[14]
+		buf[i + 15] = q1_.data1[i];             // buf[15]-buf[18]
+		buf[i + 19] = q2_.data1[i];             // buf[19]-buf[22]
+		buf[i + 23] = q3_.data1[i];             // buf[23]-buf[26]
+	}
+	
 	// 预留控制指令
 	buf[3 + length - 1] = ctrlFlag;              // buf[9]
 	

@@ -2,7 +2,7 @@
 ..\obj\pid.o: ..\mbot\PID\pid.h
 ..\obj\pid.o: ..\USER\stm32f10x.h
 ..\obj\pid.o: ..\Mbot_COER\core_cm3.h
-..\obj\pid.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\pid.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\pid.o: ..\USER\system_stm32f10x.h
 ..\obj\pid.o: ..\USER\stm32f10x_conf.h
 ..\obj\pid.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

@@ -2,7 +2,7 @@
 ..\obj\myexti.o: ..\Mbot_HARDWARE\EXTI\myexti.h
 ..\obj\myexti.o: ..\USER\stm32f10x.h
 ..\obj\myexti.o: ..\Mbot_COER\core_cm3.h
-..\obj\myexti.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\myexti.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\myexti.o: ..\USER\system_stm32f10x.h
 ..\obj\myexti.o: ..\USER\stm32f10x_conf.h
 ..\obj\myexti.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -29,3 +29,6 @@
 ..\obj\myexti.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 ..\obj\myexti.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\myexti.o: ..\STM32F10x_FWLib\inc\misc.h
+..\obj\myexti.o: ..\SYSTEM\delay\delay.h
+..\obj\myexti.o: ..\Mbot_HARDWARE\USART3\usart3.h
+..\obj\myexti.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdio.h

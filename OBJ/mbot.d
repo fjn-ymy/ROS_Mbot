@@ -2,7 +2,7 @@
 ..\obj\mbot.o: ..\SYSTEM\sys\sys.h
 ..\obj\mbot.o: ..\USER\stm32f10x.h
 ..\obj\mbot.o: ..\Mbot_COER\core_cm3.h
-..\obj\mbot.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\mbot.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\mbot.o: ..\USER\system_stm32f10x.h
 ..\obj\mbot.o: ..\USER\stm32f10x_conf.h
 ..\obj\mbot.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -37,13 +37,13 @@
 ..\obj\mbot.o: ..\Mbot_HARDWARE\ENCODER\encoder.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\USART1\usart1.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\USART3\usart3.h
-..\obj\mbot.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\mbot.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\IIC\ioi2c.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\MPU6050\mpu6050.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\DMP\inv_mpu.h
-..\obj\mbot.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\mbot.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\mbot.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\mbot.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\mbot.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\string.h
+..\obj\mbot.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\DMP\dmpKey.h
 ..\obj\mbot.o: ..\Mbot_HARDWARE\DMP\dmpmap.h

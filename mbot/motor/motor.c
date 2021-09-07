@@ -74,8 +74,8 @@ void App_main()
 		{
 			if(Flag_sudu==2)//默认低速
 			{
-				leftSpeedSet  = 200; 
-				rightSpeedSet = 200; 			
+				leftSpeedSet  = 150; 
+				rightSpeedSet = 150; 			
 			}
 			else if(Flag_sudu==1)//高速
 			{
@@ -88,8 +88,8 @@ void App_main()
 
 			if(Flag_sudu==2)//默认低速
 			{
-				leftSpeedSet  = -200; 
-				rightSpeedSet = -200; 			
+				leftSpeedSet  = -150; 
+				rightSpeedSet = -150; 			
 			}
 			else if(Flag_sudu==1)//高速
 			{
@@ -102,8 +102,8 @@ void App_main()
 
 			if(Flag_sudu==2||Flag_sudu==1)//默认低速
 			{
-				leftSpeedSet  = -100; 
-				rightSpeedSet = 100;			
+				leftSpeedSet  = -50; 
+				rightSpeedSet = 50;			
 			}
 		}
 		else if(Flag_Right==1)
@@ -111,8 +111,8 @@ void App_main()
 
 			if(Flag_sudu==2||Flag_sudu==1)//默认低速
 			{
-				leftSpeedSet  = 100; 
-				rightSpeedSet = -100;			
+				leftSpeedSet  = 50; 
+				rightSpeedSet = -50;			
 			}
 		}
 		else

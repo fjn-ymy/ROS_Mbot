@@ -2,7 +2,7 @@
 ..\obj\usart1.o: ..\Mbot_HARDWARE\USART1\usart1.h
 ..\obj\usart1.o: ..\USER\stm32f10x.h
 ..\obj\usart1.o: ..\Mbot_COER\core_cm3.h
-..\obj\usart1.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\usart1.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\usart1.o: ..\USER\system_stm32f10x.h
 ..\obj\usart1.o: ..\USER\stm32f10x_conf.h
 ..\obj\usart1.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

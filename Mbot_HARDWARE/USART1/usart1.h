@@ -4,6 +4,7 @@
 #include "stm32f10x.h"
 
 void usart1_init(uint32_t bound);
+void usart2_init(uint32_t bound);
 
 #endif
 

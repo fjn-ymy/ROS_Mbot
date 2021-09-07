@@ -30,9 +30,9 @@ void PID_Init(void)
 	pid_Task_Letf.speedNow = 0;
 	reset_Uk(&pid_Task_Letf);		
 /***********************右轮速度pid****************************/
-	pid_Task_Right.Kp = 1024 * 0.35;//0.2
+	pid_Task_Right.Kp = 1024 * 0.5;//0.2
  	pid_Task_Right.Ki = 1024 * 0;	//不使用积分
-	pid_Task_Right.Kd = 1024 * 0.06; 
+	pid_Task_Right.Kd = 1024 * 0.08; 
 	pid_Task_Right.Ur = 1024 * 4000;
 	pid_Task_Right.Adjust   = 0;
 	pid_Task_Right.En       = 1;
@@ -41,6 +41,31 @@ void PID_Init(void)
 	reset_Uk(&pid_Task_Right);
 }
 
+
+void PID_DIS_Init(void)
+{
+//乘以1024原因避免出现浮点数运算，全部是整数运算，这样PID控制器运算速度会更快
+/***********************左轮速度pid****************************/
+	pid_Task_Letf.Kp = 0;//0.4
+ 	pid_Task_Letf.Ki = 0;	
+	pid_Task_Letf.Kd = 0; 
+	pid_Task_Letf.Ur = 0;
+	pid_Task_Letf.Adjust   = 0;
+	pid_Task_Letf.En       = 0;
+	pid_Task_Letf.speedSet = 0;
+	pid_Task_Letf.speedNow = 0;
+	reset_Uk(&pid_Task_Letf);		
+/***********************右轮速度pid****************************/
+	pid_Task_Right.Kp = 0;//0.2
+ 	pid_Task_Right.Ki = 0;	//不使用积分
+	pid_Task_Right.Kd = 0; 
+	pid_Task_Right.Ur = 0;
+	pid_Task_Right.Adjust   = 0;
+	pid_Task_Right.En       = 0;
+	pid_Task_Right.speedSet = 0;
+	pid_Task_Right.speedNow = 0;
+	reset_Uk(&pid_Task_Right);
+}
 /***********************************************************************************************
  函 数 名：void reset_Uk(PID_Uint *p)
  功    能：初始化U_kk,ekk,ekkk

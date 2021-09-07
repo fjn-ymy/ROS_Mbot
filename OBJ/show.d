@@ -3,7 +3,7 @@
 ..\obj\show.o: ..\SYSTEM\sys\sys.h
 ..\obj\show.o: ..\USER\stm32f10x.h
 ..\obj\show.o: ..\Mbot_COER\core_cm3.h
-..\obj\show.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\show.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\show.o: ..\USER\system_stm32f10x.h
 ..\obj\show.o: ..\USER\stm32f10x_conf.h
 ..\obj\show.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -31,14 +31,14 @@
 ..\obj\show.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\show.o: ..\STM32F10x_FWLib\inc\misc.h
 ..\obj\show.o: ..\mbot\PID\pid.h
-..\obj\show.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\show.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\show.o: ..\Mbot_HARDWARE\MPU6050\MPU6050.h
 ..\obj\show.o: ..\Mbot_HARDWARE\IIC\IOI2C.h
 ..\obj\show.o: ..\SYSTEM\delay\delay.h
 ..\obj\show.o: ..\Mbot_HARDWARE\DMP\inv_mpu.h
-..\obj\show.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\show.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\show.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\show.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\show.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\string.h
+..\obj\show.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\show.o: ..\Mbot_HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\show.o: ..\Mbot_HARDWARE\DMP\dmpKey.h
 ..\obj\show.o: ..\Mbot_HARDWARE\DMP\dmpmap.h

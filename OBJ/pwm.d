@@ -2,7 +2,7 @@
 ..\obj\pwm.o: ..\Mbot_HARDWARE\MOTOR_PWM\pwm.h
 ..\obj\pwm.o: ..\USER\stm32f10x.h
 ..\obj\pwm.o: ..\Mbot_COER\core_cm3.h
-..\obj\pwm.o: C:\Software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\pwm.o: E:\MDK\MDK_IDE\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\pwm.o: ..\USER\system_stm32f10x.h
 ..\obj\pwm.o: ..\USER\stm32f10x_conf.h
 ..\obj\pwm.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

@@ -120,8 +120,8 @@ void Get_Motor_Speed(int *leftSpeed,int *rightSpeed)
 	rightWheelEncoderNow+= getTIMx_DetaCnt(TIM2);
 		
 	//5ms测速    	
-	*leftSpeed   = (leftWheelEncoderNow - leftWheelEncoderLast)*1000*200*0.000120830;  
-	*rightSpeed  = (rightWheelEncoderNow - rightWheelEncoderLast)*1000*200*0.000181245;
+	*leftSpeed   = (leftWheelEncoderNow - leftWheelEncoderLast)*1000*200*0.000130900;  
+	*rightSpeed  = (rightWheelEncoderNow - rightWheelEncoderLast)*1000*200*0.000130900;
 
 	//记录上次编码器数据
 	leftWheelEncoderLast  = leftWheelEncoderNow;                    

@@ -24,6 +24,7 @@ extern struct pid_uint pid_Task_Letf;
 extern struct pid_uint pid_Task_Right;
 
 void  PID_Init(void);
+void  PID_DIS_Init(void);
 void  reset_Uk(struct pid_uint *p);
 s32   PID_common(int set,int jiance,struct pid_uint *p);
 void Pid_Ctrl(int *leftMotor,int  *rightMotor);
